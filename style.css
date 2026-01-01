@@ -1,0 +1,102 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MOBILE-ONLY */
+@media (min-width: 768px) {
+  body {
+    display: none;
+  }
+}
+
+html, body {
+  height: 100%;
+  font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: rgb(224, 240, 255);
+  color: #0f172a;
+}
+
+
+/* LAYOUT */
+.page {
+  height: 100vh;
+  padding: 36px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* TEXT */
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: #1f2937;
+}
+
+/* NAV BUTTON — RIGHT SIDE */
+.next {
+  margin-top: 36px;
+  margin-left: auto;           /* pushes button to right */
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: rgb(200, 220, 240); /* darker than bg */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: #0f172a;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.next:hover {
+  background-color: rgb(185, 205, 225);
+  transform: translateX(2px);
+}
+
+/* SIGNATURE */
+.signature {
+  margin-top: 28px;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* EASTER EGG LINK */
+.gift-link {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: #475569;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.gift-link:hover {
+  opacity: 1;
+}
+
+.page-title {
+  display: block;
+  align-self: flex-start;   /* locks it to same left edge */
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
